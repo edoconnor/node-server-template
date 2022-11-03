@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
+    "dev": "npx ts-node src/server.ts",
     "start": "node server.js"
   },
   "keywords": [],
