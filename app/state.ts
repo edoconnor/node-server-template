@@ -1,4 +1,4 @@
-import * as mongodb from "mongodb";
+import mongodb from "mongodb";
 
 export interface State {
   name: string;

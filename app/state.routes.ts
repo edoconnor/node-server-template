@@ -1,5 +1,5 @@
-import * as express from "express";
-import * as mongodb from "mongodb";
+import express from "express";
+import mongodb from "mongodb";
 import { collections } from "./database";
 
 export const stateRouter = express.Router();
@@ -29,4 +29,3 @@ stateRouter.get("/:id", async (req, res) => {
     res.status(404).send(`Failed to find an state: ID ${req?.params?.id}`);
   }
 });
-

@@ -1,4 +1,4 @@
-import * as dotenv from "dotenv";
+import dotenv from "dotenv";
 import cors from "cors";
 import express from "express";
 import { connectToDatabase } from "./database";
@@ -23,7 +23,7 @@ connectToDatabase(ATLAS_URI)
     app.use(cors());
     app.use("/states", stateRouter);
     app.listen(process.env.PORT || 5200, () => {
-        console.log("Server is on " + PORT);
+      console.log("Server is on " + PORT);
     });
   })
   .catch((error) => console.error(error));
