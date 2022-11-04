@@ -5,7 +5,7 @@ import { collections } from "./database";
 export const stateRouter = express.Router();
 stateRouter.use(express.json());
 
-stateRouter.get("/", async (_req, res) => {
+stateRouter.get("/", async (req, res) => {
   try {
     const states = await collections.states.find({}).toArray();
     res.status(200).send(states);
